@@ -1,65 +1,60 @@
-/*
+//alert('zewnetrzny skrypt');
 
-// alert('Zewnętrzny skrypt');
+let zmiena=8;
+let imie='Janusz';
+let nazwisko='Nowak';
 
-let zmienna = 8;
-let imie = 'Janusz';
-let nazwisko = 'Cebula';
-document.write('Twoje imię: ' + imie);
+document.write('Twoje imie ' + imie);
 console.log(nazwisko);
 
-let x = 2, y = 10;
-let suma = x + y;
-document.write('<br> Suma wynosi: ' + suma);
-let iloraz = x/y;
-console.log(iloraz);
+let x=2;
+let y=10;
+let suma=x+y
+document.write('<br> Suma = '+suma);
 
-// potęgowanie
-let potega = Math.pow(2, 10);
-console.log(potega); //1024
+let iloraz=x/y;
+console.log(iloraz);
+//potegowanie
+
+let potea = Math.pow(2,10);
+console.log(potea); //1024
 
 // modulo
-let modulo = 17 % 5
-console.log(modulo);
+let modulo = 17%5;
+console.log(modulo); //2
 
-// type
-let a = 8, b = '2';
+//type
+let a=8, b='2'
 console.log(typeof(a)); //number
 console.log(typeof(b)); //string
 
-let prawda = true;
+let prawda=true;
 console.log(typeof(prawda)); //boolean
 
 let pusta;
-console.log(typeof(pusta)); //undefined
+console.log(typeof(pusta));//undefined
 
-let nic = null;
+let nic=null
+console.log(nic);//object
 
-console.log(typeof(nic)); //undefined
+let liczba1=prompt('Podaj pierwsza liczbe ');
+let liczba2=prompt('Podaj druga liczbe ');
 
-let liczba1 = prompt('Podaj pierwszą liczbę');
-let liczba2 = prompt('Podaj drugą liczbę');
-// liczba1 = parseInt(liczba1);
-// liczba2 = parseInt(liczba2);
-
-liczba1 = parseFloat(liczba1);
-liczba2 = parseFloat(liczba2);
+liczba1=parseInt(liczba1);
+liczba2=parseInt(liczba2);
 
 suma=liczba1+liczba2;
-document.write('<br> Suma wynosi: ' + suma);
-*/
+console.log(typeof(suma));
+document.write('<br>Suma wynosi:  '+suma);
 
-a = parseFloat(prompt('Podaj bok a'));
-b = parseFloat(prompt('Podaj bok b'));
 
-let pole=a*b;
-wynik = '<hra= ' + a + ' , ';
-wynik += 'b = ' + b + ' , ';
-wynik += '<div id = "czerwony" pole = ' + pole + 'cm<sup>2</sup>'
+let dlugosc=prompt('Podaj dlugosc ');
+let szerokosc=prompt('Podaj szerokosc ');
 
-document.write(wynik);
-/*
-  Oblicz pole prostokąta, dane wyświetl w formacie:
-  a = ..., b = ..., pole = ... cm2(dwa w indeksie górnym)
-  Pole i wartość pola w kolorze czerwonym.
-*/
+dlugosc=parseFloat(dlugosc);
+szerokosc=parseFloat(szerokosc);
+
+let pole=dlugosc*szerokosc;
+document.write('<br>Dlugosc = '+dlugosc);
+document.write('<br>Szerokosc = '+szerokosc);
+document.write('<br><span id ="czerwony">Pole = '+pole+'cm<sup>2</sup></span>');

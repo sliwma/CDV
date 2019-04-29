@@ -1,11 +1,13 @@
-let komunikat = document.getElementById('komunikat');
+let komunikat =document.getElementById('komunikat');
+let wiek=prompt('Podaj swoj wiek');
 
-let wiek = prompt('Podaj swój wiek');
 
-if (wiek >= 18) {
-  //pełnoletni
-  komunikat.innerHTML = 'Jesteś pełnoletni';
-}{
+
+if(wiek>=18)
+{
+  //pelnoletni
+  komunikat.innerHTML='Jestes pelnoletni'
+}else {
   //dziecko
-  komunikat.innerHTML = 'Jesteś dzieckiem';
+    komunikat.innerHTML='Jestes dziecko'
 }
